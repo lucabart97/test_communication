@@ -1,0 +1,13 @@
+syntax = "proto3";
+package tk;
+
+// header 0x01
+message Command {
+    Type command = 1;
+}
+
+enum Type {
+  START = 0;
+  STOP = 1;
+  RESET_LOC = 2;
+}

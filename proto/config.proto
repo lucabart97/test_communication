@@ -1,0 +1,18 @@
+syntax = "proto3";
+package tk;
+
+// header 0x02
+message Config {
+    float grid_resolution = 1;
+    float grid_max_height = 2;
+    float grid_dim = 3;
+    Vec2 grid_center = 4;
+    uint32 grid_hz = 5;
+    uint32 loc_hz = 6;
+    float occupancy_history_meters = 7;
+}
+
+message Vec2{
+    float x = 1;
+    float y = 2;
+}
