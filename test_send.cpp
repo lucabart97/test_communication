@@ -27,8 +27,9 @@ int main(int argc, char const *argv[]) {
 
   // set-up pose
   tk::Position pose;
-  pose.set_gps_latitude(1000.0);
-  pose.set_gps_longitude(2000.0);
+  pose.mutable_pose()->set_x(1000.0);
+  pose.mutable_pose()->set_y(2000.0);
+  pose.mutable_pose()->set_z(2000.0);
 
   boost::asio::io_service io_service;
   udp::socket socket(io_service);

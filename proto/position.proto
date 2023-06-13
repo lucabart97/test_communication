@@ -3,15 +3,9 @@ package tk;
 
 // header 0x04
 message Position {
-    Vec3 loc_pose = 1;
-    Quat loc_rot = 2;
-    bool loc_drift_free = 3;
-    double gps_latitude = 4;
-    double gps_longitude = 5;
-    double gps_altitude = 6;
-    Vec3 gps_speed = 7;
-    Quat gps_rot = 8;
-    float gps_dop = 9;
+    Vec3 pose = 1;
+    Quat rot = 2;
+    bool drift_free = 3;
 }
 
 message Quat{
